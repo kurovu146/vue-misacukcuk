@@ -449,7 +449,7 @@ export default {
     /* width: calc(100% - 221px); */
     position: relative;
     height: calc(100vh - 61px);
-    transition: all 0.4s;
+    transition: all 0.5s;
 }
 
 #employee .employee-header {

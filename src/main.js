@@ -13,7 +13,10 @@ import Dropdown from "./components/base/Dropdown.vue";
 import Input from "./components/base/Input.vue";
 import Row from "./components/base/Row.vue";
 import router from "./router";
+import Popup from "./components/base/Popup.vue";
+import Spin from "./components/base/Spin.vue";
 import store from "./store";
+import Table from "./components/base/Table.vue";
 
 // file config axios này luôn phải để ở file main.js
 axiosConfig();
@@ -28,6 +31,9 @@ Vue.component("BaseRow", Row);
 Vue.component("BaseCombobox", Combobox);
 Vue.component("BaseDropdown", Dropdown);
 Vue.component("BaseButtonIcon", ButtonIcon);
+Vue.component("BasePopup", Popup);
+Vue.component("BaseSpin", Spin);
+Vue.component("BaseTable", Table);
 Vue.use(VTooltip);
 
 Vue.config.productionTip = false;
