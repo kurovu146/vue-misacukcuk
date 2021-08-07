@@ -129,7 +129,6 @@ export default {
 #navbar {
     height: calc(100vh - 61px);
     background-color: #fff;
-    /* width: 220px; */
     border-right: 1px solid #e5e5e5;
     box-sizing: border-box;
     transition: all 0.5s;

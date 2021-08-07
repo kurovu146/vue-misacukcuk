@@ -204,7 +204,7 @@ td {
     white-space: nowrap;
 }
 
-table tr:nth-child(even) {
+table tr:nth-child(odd) {
     background-color: #e5e5e5;
 }
 

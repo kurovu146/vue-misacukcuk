@@ -9,6 +9,7 @@
             <router-view :style="width" />
         </div>
 
+        <ToastMessage :newToast="$store.state.toastMessage.toast" />
     </div>
 </template>
 

@@ -9,14 +9,15 @@ import Button from "./components/base/Button.vue";
 import ButtonIcon from "./components/base/ButtonIcon.vue";
 import Col from "./components/base/Col.vue";
 import Combobox from "./components/base/Combobox.vue";
-import Dropdown from "./components/base/Dropdown.vue";
+import Dialog from "./components/base/Dialog.vue";
 import Input from "./components/base/Input.vue";
-import Row from "./components/base/Row.vue";
-import router from "./router";
 import Popup from "./components/base/Popup.vue";
+import Row from "./components/base/Row.vue";
 import Spin from "./components/base/Spin.vue";
-import store from "./store";
 import Table from "./components/base/Table.vue";
+import ToastMessage from "./components/base/ToastMessage/index.vue";
+import router from "./router";
+import store from "./store";
 
 // file config axios này luôn phải để ở file main.js
 axiosConfig();
@@ -24,16 +25,17 @@ library.add(faAngleDown, faAngleUp, faSort, faInfoCircle, faExclamationTriangle,
 
 // register
 Vue.component("font-awesome-icon", FontAwesomeIcon);
+Vue.component("ToastMessage", ToastMessage);
 Vue.component("BaseButton", Button);
 Vue.component("BaseInput", Input);
+Vue.component("BaseDialog", Dialog);
 Vue.component("BaseCol", Col);
 Vue.component("BaseRow", Row);
-Vue.component("BaseCombobox", Combobox);
-Vue.component("BaseDropdown", Dropdown);
-Vue.component("BaseButtonIcon", ButtonIcon);
 Vue.component("BasePopup", Popup);
-Vue.component("BaseSpin", Spin);
 Vue.component("BaseTable", Table);
+Vue.component("BaseCombobox", Combobox);
+Vue.component("BaseButtonIcon", ButtonIcon);
+Vue.component("BaseSpin", Spin);
 Vue.use(VTooltip);
 
 Vue.config.productionTip = false;

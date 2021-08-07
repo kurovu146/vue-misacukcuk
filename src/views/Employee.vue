@@ -5,6 +5,13 @@
                 Danh sách nhân viên
             </div>
             <div class="group-button">
+                <div class="delete-button">
+                    <BaseButtonIcon
+                        buttonName="Xoá nhân viên"
+                        icon="delete.png"
+                        @click="handleDeleteEmployee"
+                    />
+                </div>
                 <div class="add-button">
                     <BaseButtonIcon
                         buttonName="Thêm nhân viên"
@@ -138,6 +145,8 @@ import EmployeeApi from "../api/service/employee";
 import TheEmployeeDetails from "../components/layout/TheEmployeeDetails.vue";
 import { mapMutations } from "vuex";
 const columnNames = [
+    { key: "CheckBox", text: "" },
+    { key: "Index", text: "#" },
     { key: "EmployeeCode", text: "Mã nhân viên" },
     { key: "FullName", text: "Họ và tên", sort: true },
     { key: "GenderName", text: "Giới tính" },
@@ -282,6 +291,10 @@ export default {
         handleOpenDialog() {
             this.stateDialog = stateDialog.create;
             this.openDialog = true;
+        },
+
+        handleDeleteEmployee() {
+
         },
 
         /**
@@ -446,7 +459,7 @@ export default {
 
 <style scoped>
 #employee {
-    /* width: calc(100% - 221px); */
+    /* width: calc(100% - 225px); */
     position: relative;
     height: calc(100vh - 61px);
     transition: all 0.5s;
@@ -458,8 +471,13 @@ export default {
 }
 
 #employee .group-button {
+    display: flex;
     position: relative;
     margin-top: 24px;
+    margin-right: 16px;
+}
+
+#employee .group-button .delete-button {
     margin-right: 16px;
 }
 
