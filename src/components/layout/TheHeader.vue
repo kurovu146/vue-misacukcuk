@@ -22,7 +22,7 @@
             <div class="select-restaurant">
                 <div class="misa-dropdown">
                     <div class="dropdown-text">Nhà hàng biển đông</div>
-                    <div class="arrow-icon"><i class="arrow down"></i></div>
+                    <div class="arrow-icon"><i class="fas fa-angle-down arrow-icon"></i></div>
                     <div class="dropdown-list" style="display: none;">
                         <div class="dropdown-item selected">Nhà hàng biển Đông</div>
                         <div class="dropdown-item">Nhà hàng biển Bắc</div>
@@ -79,6 +79,17 @@ export default {
 
 .header-right .select-restaurant {
     margin-left: 16px;
+}
+
+.misa-dropdown {
+    display: flex;
+    cursor: pointer;
+}
+
+.arrow-icon {
+    height:20px;
+    width:20px;
+    margin-left: 12px;
 }
 
 .header-right .account {

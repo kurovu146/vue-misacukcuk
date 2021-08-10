@@ -305,7 +305,7 @@ label {
     display: flex;
     align-items: center;
     padding: 0 12px;
-    border-left: 1px solid #bbb;
+    /* border-left: 1px solid #bbb; */
     background-color: #fff;
     cursor: pointer;
     border-radius: 0 4px 4px 0;

@@ -413,6 +413,7 @@ export default {
 #employee-details {
     padding: 12px;
     width: 650px;
+    overflow-y: scroll;
 }
 
 #employee-details .title {

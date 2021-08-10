@@ -5,13 +5,13 @@
                 Danh sách nhân viên
             </div>
             <div class="group-button">
-                <div class="delete-button">
+                <!-- <div class="delete-button">
                     <BaseButtonIcon
                         buttonName="Xoá nhân viên"
                         icon="delete.png"
                         @click="handleDeleteEmployee"
                     />
-                </div>
+                </div> -->
                 <div class="add-button">
                     <BaseButtonIcon
                         buttonName="Thêm nhân viên"
@@ -71,7 +71,7 @@
         <div class="pagination-bar">
             <div class="pagination-box">
                 <div class="paging-left">
-                    Hiện thị 1-10/1000 nhân viên
+                    Hiện thị <b>1-10/1000</b> nhân viên
                 </div>
                 <div class="paging-center">
                     <div
@@ -293,9 +293,14 @@ export default {
             this.openDialog = true;
         },
 
-        handleDeleteEmployee() {
-
-        },
+        /**
+         * Hàm xoá nhân viên
+         * Created by: Vũ Đức Tuấn (02/08/2021)
+         */
+        // handleDeleteEmployee(employee) {
+        //     this.currentEmployee = employee;
+        //     this.showRightClickComponent = true;
+        // },
 
         /**
          * Đóng dialog form chi tiết nhân viên
@@ -530,7 +535,7 @@ export default {
 
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
-    margin-top: 308px;
+    margin-top: 38px;
 }
 
 /* Handle */

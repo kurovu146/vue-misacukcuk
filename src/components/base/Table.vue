@@ -41,7 +41,7 @@
 <script>
 /**
  * BaseTable
- * CreatedBy: Vũ Long Vũ 14/7/2021
+ * CreatedBy: Vũ Đức Tuấn 4/08/2021
  */
 
 export default {
@@ -77,7 +77,7 @@ export default {
     methods: {
         /**
         * Sự kiện khi double click vào 1 row
-        * CreatedBy: Vũ Long Vũ 14/7/2021
+        * CreatedBy: Vũ Đức Tuấn 4/08/2021
         */
         handleDblClickRow(e, item) {
             e.preventDefault();
@@ -86,7 +86,7 @@ export default {
 
         /**
         * Sự kiện khi right click vào 1 row
-        * CreatedBy: Vũ Long Vũ 19/7/2021
+        * CreatedBy: Vũ Đức Tuấn 6/08/2021
         */
         handleRightClick(e, item) {
             e.preventDefault();
@@ -95,7 +95,7 @@ export default {
 
         /**
         * Thực hiện map dữ liệu theo các trường của theader
-        * CreatedBy: Vũ Long Vũ 14/7/2021
+        * CreatedBy: Vũ Đức Tuấn 4/08/2021
         */
         mapDataFlowHeader(item) {
             const newItem = {};
@@ -118,7 +118,7 @@ export default {
 
         /**
         * format date
-        * CreatedBy: Vũ Long Vũ 14/7/2021
+        * CreatedBy: Vũ Đức Tuấn 4/08/2021
         */
         formatDate(date) {
             if (!date) {
@@ -135,7 +135,7 @@ export default {
 
         /**
         * format date
-        * CreatedBy: Vũ Long Vũ 14/7/2021
+        * CreatedBy: Vũ Đức Tuấn 4/08/2021
         */
         formatCurency(currency) {
             if (!currency) {
@@ -146,7 +146,7 @@ export default {
 
         /**
         * setClass khi được set trong columnName
-        * CreatedBy: Vũ Long Vũ 17/7/2021
+        * CreatedBy: Vũ Đức Tuấn 4/08/2021
         */
         setClass(key) {
             const positionAlign = this.alignColumns.findIndex(item => item.key === key);
@@ -158,7 +158,7 @@ export default {
         },
         /**
         * sort column
-        * CreatedBy: Vũ Long Vũ 17/7/2021
+        * CreatedBy: Vũ Đức Tuấn 4/08/2021
         */
         onSort(key) {
             const dataSorted = this.data.sort((a, b) => {
@@ -211,6 +211,10 @@ table tr:nth-child(odd) {
 table tbody tr:hover {
     background-color: #bbbbbb;
     cursor: pointer;
+}
+
+table tbody tr td {
+    white-space: nowrap;
 }
 
 .align-center {
